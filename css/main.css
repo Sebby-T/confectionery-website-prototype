@@ -26,6 +26,8 @@ body {
   width: 100%;
 }
 
+/* Header Content */
+
 header {
   margin: 0;
   position: relative;
@@ -108,6 +110,7 @@ h1 {
 }
 
 .banner .banner-caption {
+  font-family: "Muli", sans-serif;
   margin: .5em auto;
   padding: .5em 0;
   width: 8em;
@@ -116,4 +119,38 @@ h1 {
   color: #e12828;
   border-top: 1px solid #e12828;
   border-bottom: 1px solid #e12828;
+}
+
+/* Footer Content */
+
+footer {
+  margin-top: 5em;
+  padding: 1em;
+  background-color: #f5e0bc;
+  font-family: "Muli", sans-serif;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: #9f2316;
+  text-transform: uppercase;
+}
+
+.contact-info .email {
+  color: #000;
+  text-decoration: none;
+}
+
+.shop-hours .hours {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hours strong {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.copyright {
+  text-align: center;
 }
