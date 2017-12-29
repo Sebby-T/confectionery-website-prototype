@@ -26,11 +26,13 @@ body {
   width: 100%;
 }
 
-header {
+figure {
+  margin: 0;
   position: relative;
 }
 
 h1 {
+  font-family: "Limelight", sans-serif;
   font-size: 1.5rem;
   margin: 1em 0 0;
   padding: .5em;
@@ -99,4 +101,9 @@ h1 {
 }
 .nav-check:checked ~ .nav-label .nav-close {
   display: block;
+}
+
+.banner .banner-caption {
+  text-align: center;
+  color: #e12828;
 }
