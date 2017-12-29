@@ -10,8 +10,93 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
+  font: normal 100%/1.3 Georgia, serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+header {
+  position: relative;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 1em 0 0;
+  padding: .5em;
+  text-align: center;
+  color: #efbb4d;
+  border-top: 1px solid #e12828;
+}
+
+.nav {
+  margin: 0 0 1em;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+}
+
+.nav li {
+    margin: 0 .5em;
+    padding: .75em .5em;
+    border-bottom: 1px solid #e12828;
+}
+
+.nav a {
+  display: block;
+  color: #efbb4d;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #9f2316;
+}
+
+.nav .current {
+  color: #e12828;
+}
+
+.nav-check {
+  display: none;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+  background-color:
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+  width: 100%;
+}
+
+.nav-label {
+  cursor: pointer;
+  display: inline-block;
+  width: 25px;
+  position: absolute;
+  left: 5px;
+  top: 15px;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
 }
