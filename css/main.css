@@ -35,7 +35,7 @@ header {
 
 h1 {
   font-family: "Limelight", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 1em 0 0;
   padding: .5em;
   text-align: center;
@@ -90,8 +90,8 @@ h1 {
   display: inline-block;
   width: 25px;
   position: absolute;
-  right: 6px;
-  top: 15px;
+  right: 12px;
+  top: 65px;
 }
 
 .nav-close {
@@ -111,7 +111,7 @@ h1 {
 
 .banner .banner-caption {
   font-family: "Muli", sans-serif;
-  margin: .5em auto;
+  margin: .5em auto 1em;
   padding: .5em 0;
   width: 8em;
   font-size: 1.2rem;
@@ -136,7 +136,7 @@ h1 {
 
 .opening-text h2 {
   margin: 0;
-  padding: 1em 0 .5em;
+  padding: 0 0 .5em;
   font-size: 1.3rem;
   font-family: "Muli", sans-serif;
   color: #e12828;
@@ -152,7 +152,7 @@ h1 {
 
 
 .preview-products h2 {
-  margin: 1em auto;
+  margin: 1em auto 1.5em;
   padding: .5em 0;
   width: 7em;
   font-size: 1.3rem;
@@ -216,17 +216,40 @@ h1 {
   bottom: 5px;
 }
 
+/* Reviewer Content */
+
+.critic {
+  margin-top: 1em;
+}
+
+.critic-review h2 {
+  font-family: "Muli", sans-serif;
+  margin: 1em auto;
+  width: 6.5em;
+  color: #e12828;
+  border-bottom: 1px solid #e12828;
+}
+
+.critic .critic-quote {
+  border-bottom: 1px solid #e12828;
+  margin: 0 2em;
+  padding: 1.5em 0;
+}
+
+.critic-quote p {
+  margin: 0 0 .5em;
+}
+
 /* Footer Content */
 
-
-footer {
-  margin-top: 5em;
+.page-footer {
+  margin-top: 2em;
   padding: 1em;
   background-color: #f5e0bc;
   font-family: "Muli", sans-serif;
 }
 
-h4 {
+footer h4 {
   font-size: 1.2rem;
   color: #9f2316;
   text-transform: uppercase;
