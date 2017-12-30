@@ -63,7 +63,7 @@ h1 {
 }
 
 .nav a:hover {
-  color: #9f2316;
+  color: #e12828;
 }
 
 .nav .current {
@@ -76,7 +76,6 @@ h1 {
 
 .nav-check:checked ~ .nav {
   display: block;
-  background-color:
 }
 
 .nav-open,
@@ -87,11 +86,10 @@ h1 {
 
 .nav-label {
   cursor: pointer;
-  display: inline-block;
   width: 25px;
   position: absolute;
   right: 12px;
-  top: 65px;
+  top: 66px;
 }
 
 .nav-close {
@@ -111,7 +109,7 @@ h1 {
 
 .banner .banner-caption {
   font-family: "Muli", sans-serif;
-  margin: .5em auto 1em;
+  margin: 1em auto;
   padding: .5em 0;
   width: 8em;
   font-size: 1.2rem;
@@ -273,4 +271,39 @@ footer h4 {
 .copyright {
   font-size: .75rem;
   text-align: center;
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    text-align: center;
+  }
+
+  .nav li {
+    display: inline-block;
+    padding: .1em .5em;
+    text-align: center;
+    border-bottom: none;
+    margin: 0;
+  }
+
+  .nav .nav-border-a {
+    border-left: 1px solid #e12828;
+  }
+
+.nav .nav-border-b {
+  border-left: 1px solid #e12828;
+  border-right: 1px solid #e12828;
+}
+
 }
