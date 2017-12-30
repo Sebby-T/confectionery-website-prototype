@@ -121,7 +121,103 @@ h1 {
   border-bottom: 1px solid #e12828;
 }
 
+/* Main Content */
+
+/* Opening */
+
+.opening {
+  background-color: #f5e0bc;
+}
+
+.opening-text {
+  padding: 1em;
+  text-align: center;
+}
+
+.opening-text h2 {
+  margin: 0;
+  padding: 1em 0 .5em;
+  font-size: 1.3rem;
+  font-family: "Muli", sans-serif;
+  color: #e12828;
+  border-bottom: 2px solid #fff;
+}
+
+.opening-text p {
+  margin: 0;
+  padding: 1em 0 0;
+}
+
+/* Products */
+
+
+.preview-products h2 {
+  margin: 1em auto;
+  padding: .5em 0;
+  width: 7em;
+  font-size: 1.3rem;
+  font-family: "Muli", sans-serif;
+  text-align: center;
+  color: #e12828;
+  border-bottom: 2px solid #e12828;
+}
+
+.preview-products a {
+  text-decoration: none;
+}
+
+.preview-products a:hover h3{
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.preview-products h3 {
+  font-family: "Muli", sans-serif;
+  margin: 0;
+  padding: 0 .5em;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.preview-products .milk-card {
+  position: relative;
+  margin: 0;
+}
+
+.milk-card figcaption {
+  position: absolute;
+  margin: 0;
+  left: 5px;
+  bottom: 5px;
+}
+
+.preview-products .dark-card {
+  position: relative;
+  margin: 0;
+}
+
+.dark-card figcaption {
+  position: absolute;
+  margin: 0;
+  left: 5px;
+  bottom: 5px;
+}
+
+.preview-products .white-card {
+  position: relative;
+  margin: 0;
+}
+
+.white-card figcaption {
+  position: absolute;
+  margin: 0;
+  left: 5px;
+  bottom: 5px;
+}
+
 /* Footer Content */
+
 
 footer {
   margin-top: 5em;
@@ -152,5 +248,6 @@ h4 {
 }
 
 .copyright {
+  font-size: .75rem;
   text-align: center;
 }
