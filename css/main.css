@@ -273,6 +273,18 @@ footer h4 {
   text-align: center;
 }
 
+@media only screen and (min-width: 22em) {
+
+  .banner {
+    margin: 2em 0 0;
+  }
+
+  .nav-label {
+    top: 60px;
+  }
+
+}
+
 @media only screen and (min-width: 25em) {
 
   html {
