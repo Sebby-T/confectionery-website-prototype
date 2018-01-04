@@ -462,7 +462,7 @@ footer h4 {
   }
 
   .preview-products .white-card {
-    margin: 0 12.5em;
+    margin: 0 25%;
   }
 
   .preview-products a:hover h3 {
@@ -485,7 +485,7 @@ footer h4 {
   }
 
   .quote {
-    margin: 10em 0;
+    margin: 25% 0;
   }
 
   .critic-a .critic-img,
@@ -560,6 +560,11 @@ footer h4 {
 
   .preview-products .card {
     width: 33.33%;
+  }
+
+  .critic {
+    max-width: 75%;
+    margin: 0 auto;
   }
 
 }
