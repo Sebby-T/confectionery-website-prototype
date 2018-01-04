@@ -230,7 +230,7 @@ h1 {
   font-family: "Muli", sans-serif;
   font-size: 1.3rem;
   margin: 1em auto;
-  width: 6.5em;
+  width: 6.6em;
   color: #e12828;
   border-bottom: 1px solid #e12828;
 }
@@ -415,7 +415,7 @@ footer h4 {
     overflow: hidden;
   }
 
-  .opening .opening-text {
+  .opening-text {
     float: left;
     width: 50%;
     margin: 0;
@@ -432,7 +432,7 @@ footer h4 {
   }
 
   .opening-img {
-    float: left;
+    float: right;
     width: 50%;
   }
 
@@ -512,6 +512,54 @@ footer h4 {
     float: right;
     width: 50%;
     padding: 1em;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  nav {
+    display: inline-block;
+    padding: 2.5em 0 0;
+  }
+
+  .banner {
+    max-height: 550px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .opening .left {
+    position: relative;
+  }
+
+  .opening .opening-text {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, 25%);
+    max-width: 35em;
+  }
+
+  .opening .opening-img {
+    max-height: 553px;
+    float: right;
+  }
+
+  .preview-products .white-card {
+    margin: unset;
+  }
+
+  .preview-products .card {
+    width: 33.33%;
   }
 
 }
