@@ -27,7 +27,7 @@ body {
 }
 
 .clearfix::after {
-  content:" ";
+  content: " ";
   display: block;
   clear: both;
 }
@@ -40,7 +40,7 @@ header {
 }
 
 h1 {
-  font-family: "Limelight", sans-serif;
+  font-family: Limelight, sans-serif;
   font-size: 2rem;
   margin: 1em 0 0;
   padding: .5em;
@@ -57,18 +57,24 @@ h1 {
 }
 
 .nav li {
-    margin: 0 .5em;
-    padding: .75em .5em;
-    border-bottom: 1px solid #e12828;
+  margin: 0 .5em;
+  border-bottom: 1px solid #e12828;
 }
 
 .nav a {
   display: block;
+  padding: .75em .5em;
+  border-radius: 9px;
   color: #efbb4d;
   text-decoration: none;
 }
 
+.preview-products a {
+  text-decoration: none;
+}
+
 .nav a:hover {
+  background-color: rgba(239, 187, 77, .2);
   color: #e12828;
 }
 
@@ -84,12 +90,6 @@ h1 {
   display: block;
 }
 
-.nav-open,
-.nav-close {
-  display: block;
-  width: 100%;
-}
-
 .nav-label {
   cursor: pointer;
   width: 25px;
@@ -102,10 +102,11 @@ h1 {
   display: none;
 }
 
-.nav-check:checked ~ .nav-label .nav-open {
+.nav-check:checked ~ .nav-open {
   display: none;
 }
-.nav-check:checked ~ .nav-label .nav-close {
+
+.nav-check:checked ~ .nav-close {
   display: block;
 }
 
@@ -114,7 +115,7 @@ h1 {
 }
 
 .banner .banner-caption {
-  font-family: "Muli", sans-serif;
+  font-family: Muli, sans-serif;
   margin: 1em auto;
   padding: .5em 0;
   width: 8em;
@@ -142,7 +143,7 @@ h1 {
   margin: 0;
   padding: 0 0 .5em;
   font-size: 1.3rem;
-  font-family: "Muli", sans-serif;
+  font-family: Muli, sans-serif;
   color: #e12828;
   border-bottom: 2px solid #fff;
 }
@@ -154,34 +155,35 @@ h1 {
 
 /* Products */
 
-
 .preview-products h2 {
   margin: 1em auto 1.5em;
   padding: .5em 0;
   width: 7em;
   font-size: 1.3rem;
-  font-family: "Muli", sans-serif;
+  font-family: Muli, sans-serif;
   text-align: center;
   color: #e12828;
   border-bottom: 1px solid #e12828;
 }
 
-.preview-products a {
-  text-decoration: none;
-}
-
-.preview-products a:hover h3{
-  background-color: rgba(0, 0, 0, .6);
+footer h3 {
+  font-size: 1.2rem;
+  color: #9f2316;
+  text-transform: uppercase;
 }
 
 .preview-products h3 {
-  font-family: "Muli", sans-serif;
+  font-family: Muli, sans-serif;
   margin: 0;
   padding: 0 .5em;
   font-size: 1.5rem;
   color: #fff;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, .3);
+}
+
+.preview-products a:hover h3 {
+  background-color: rgba(0, 0, 0, .6);
 }
 
 .preview-products .milk-card {
@@ -227,7 +229,7 @@ h1 {
 }
 
 .critic-review h2 {
-  font-family: "Muli", sans-serif;
+  font-family: Muli, sans-serif;
   font-size: 1.3rem;
   margin: 1em auto;
   width: 6.6em;
@@ -251,13 +253,7 @@ h1 {
   margin-top: 2em;
   padding: 1em;
   background-color: #f5e0bc;
-  font-family: "Muli", sans-serif;
-}
-
-footer h4 {
-  font-size: 1.2rem;
-  color: #9f2316;
-  text-transform: uppercase;
+  font-family: Muli, sans-serif;
 }
 
 .info-contact .email {
@@ -286,7 +282,7 @@ footer h4 {
   width: 10em;
 }
 
-@media only screen and (min-width: 22.5em) {
+@media only screen and (min-width: 22.4em) {
 
   .banner {
     margin: 2em 0 0;
@@ -398,16 +394,19 @@ footer h4 {
     font-size: 2rem;
     margin: 0;
     float: left;
-    border: unset;
+    border: none;
   }
 
   nav {
-    padding: 1.9em 0 0;
+    padding: 0.9em 0 0;
   }
 
   .banner {
     margin: 0 0 2.5em;
     position: relative;
+    max-height: 550px;
+    overflow: hidden;
+    width: 100%;
   }
 
   .banner .banner-caption {
@@ -457,7 +456,7 @@ footer h4 {
   }
 
   .preview-products figure > figcaption {
-    position: unset;
+    position: static;
     text-align: center;
   }
 
@@ -469,7 +468,7 @@ footer h4 {
     border-top-right-radius: 0;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: unset;
+    background-color: #fff;
   }
 
   .preview-products .white-card {
@@ -478,7 +477,7 @@ footer h4 {
 
   .preview-products a:hover h3 {
     color: #fff;
-    background-color: rgba(0, 0, 0, .3)
+    background-color: rgba(0, 0, 0, .3);
   }
 
   .critic-review {
@@ -487,7 +486,7 @@ footer h4 {
 
   .critic {
     margin: 1.5em;
-    width: unset;
+    width: inherit;
   }
 
   .critic .critic-quote {
@@ -539,13 +538,7 @@ footer h4 {
 
   nav {
     display: inline-block;
-    padding: 2.7em 0 0;
-  }
-
-  .banner {
-    max-height: 550px;
-    overflow: hidden;
-    width: 100%;
+    padding: 1.7em 0 0;
   }
 
   .opening .left {
@@ -566,7 +559,7 @@ footer h4 {
   }
 
   .preview-products .white-card {
-    margin: unset;
+    margin: inherit;
   }
 
   .preview-products .card {
