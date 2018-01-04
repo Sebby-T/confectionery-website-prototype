@@ -26,6 +26,12 @@ body {
   width: 100%;
 }
 
+.clearfix::after {
+  content:" ";
+  display: block;
+  clear: both;
+}
+
 /* Header Content */
 
 header {
@@ -381,10 +387,10 @@ footer h4 {
     font-size: 2rem;
     margin: 0;
     float: left;
+    border: unset;
   }
 
   nav {
-    float: left;
     padding: 1.9em 0 0;
   }
 
@@ -434,7 +440,7 @@ footer h4 {
     overflow: hidden;
   }
 
-  .preview-products .float {
+  .preview-products .card {
     float: left;
     width: 50%;
   }
@@ -470,16 +476,42 @@ footer h4 {
 
   .critic {
     margin: 1.5em;
+    width: unset;
   }
 
-  .critic-review .float-left {
+  .critic .critic-quote {
+    margin: 0;
+    border-top: 1px solid #e12828;
+  }
+
+  .quote {
+    margin: 10em 0;
+  }
+
+  .critic-a .critic-img,
+  .critic-c .critic-img {
     float: left;
-    clear: right;
+    padding: 1em;
+    width: 50%;
   }
 
-  .critic-review .float-right {
+  .critic-a .quote,
+  .critic-c .quote {
+    float: left;
+    width: 50%;
+    padding: 1em;
+  }
+
+  .critic-b .critic-img {
     float: right;
-    clear: left;
+    padding: 1em;
+    width: 50%;
+  }
+
+  .critic-b .quote {
+    float: right;
+    width: 50%;
+    padding: 1em;
   }
 
 }
