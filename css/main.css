@@ -280,6 +280,12 @@ footer h4 {
   text-align: center;
 }
 
+.icon {
+  display: none;
+  margin: 0 auto;
+  width: 10em;
+}
+
 @media only screen and (min-width: 22.5em) {
 
   .banner {
@@ -318,6 +324,11 @@ footer h4 {
   .nav .nav-border-b {
     border-left: 1px solid #e12828;
     border-right: 1px solid #e12828;
+  }
+
+  .info,
+  .hours {
+    text-align: center;
   }
 
 }
@@ -528,7 +539,7 @@ footer h4 {
 
   nav {
     display: inline-block;
-    padding: 2.5em 0 0;
+    padding: 2.7em 0 0;
   }
 
   .banner {
@@ -565,6 +576,24 @@ footer h4 {
   .critic {
     max-width: 75%;
     margin: 0 auto;
+  }
+
+  .page-footer {
+    overflow: hidden;
+  }
+
+  .contact {
+    float: left;
+    width: 50%;
+  }
+
+  .shop-hours {
+    float: left;
+    width: 50%;
+  }
+
+  .icon {
+    display: block;
   }
 
 }
