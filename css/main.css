@@ -64,7 +64,7 @@ h1 {
 .nav a {
   display: block;
   padding: .75em .5em;
-  border-radius: 9px;
+  border-radius: 5px;
   color: #efbb4d;
   text-decoration: none;
 }
@@ -90,7 +90,13 @@ h1 {
   display: block;
 }
 
-.nav-label {
+.nav-open,
+.nav-close {
+  display: block;
+  width: 100%;
+}
+
+#nav-label {
   cursor: pointer;
   width: 25px;
   position: absolute;
@@ -102,11 +108,11 @@ h1 {
   display: none;
 }
 
-.nav-check:checked ~ .nav-open {
+.nav-check:checked ~ #nav-label .nav-open {
   display: none;
 }
 
-.nav-check:checked ~ .nav-close {
+.nav-check:checked ~ #nav-label .nav-close {
   display: block;
 }
 
@@ -284,11 +290,15 @@ footer h3 {
 
 @media only screen and (min-width: 22.4em) {
 
+  .nav {
+    margin-top: 1em;
+  }
+
   .banner {
     margin: 2em 0 0;
   }
 
-  .nav-label {
+  #nav-label {
     top: 60px;
   }
 
@@ -296,13 +306,14 @@ footer h3 {
 
 @media only screen and (min-width: 25em) {
 
-  .nav-label {
+  #nav-label {
     display: none;
   }
 
   .nav {
     display: block;
     text-align: center;
+    margin: 0;
   }
 
   .nav li {
@@ -311,6 +322,10 @@ footer h3 {
     text-align: center;
     border-bottom: none;
     margin: 0;
+  }
+
+  .nav a {
+    display: inline;
   }
 
   .nav .nav-border-a {
@@ -398,7 +413,8 @@ footer h3 {
   }
 
   nav {
-    padding: .9em 0 0;
+    display: inline-block;
+    padding: 1.7em 0;
   }
 
   .banner {
