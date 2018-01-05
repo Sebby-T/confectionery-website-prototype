@@ -273,6 +273,12 @@ footer h3 {
   font-family: Muli, sans-serif;
 }
 
+.footer-wrap {
+  border: 2px solid #e12828;
+  border-radius: 10px;
+  padding: 1em;
+}
+
 .info-contact .email {
   color: #000;
   text-decoration: none;
