@@ -49,6 +49,11 @@ h1 {
   border-top: 1px solid #e12828;
 }
 
+.header-icon {
+  display: none;
+  width: 5em;
+}
+
 .nav {
   margin: 0 0 1em;
   padding: 0;
@@ -243,7 +248,11 @@ footer h3 {
   border-bottom: 1px solid #e12828;
 }
 
-.critic .critic-quote {
+.quote img {
+  display: none;
+}
+
+.quote .critic-quote {
   border-bottom: 1px solid #e12828;
   margin: 0 2em;
   padding: 1em 0;
@@ -441,10 +450,23 @@ footer h3 {
     overflow: hidden;
   }
 
-  .opening-text {
+  .opening .open-wrap {
+    max-width: 60em;
+    margin: 0 auto;
+  }
+
+  .opening .left {
+    position: relative;
+  }
+
+  .opening .opening-text {
     float: left;
     width: 50%;
     margin: 0;
+    position: absolute;
+    left: 25%;
+    transform: translateX(-50%);
+    max-width: 35em;
   }
 
   .opening-text h2 {
@@ -464,6 +486,11 @@ footer h3 {
 
   .preview-products {
     overflow: hidden;
+  }
+
+  .product-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .preview-products .card {
@@ -500,8 +527,15 @@ footer h3 {
     overflow: hidden;
   }
 
+  .critic-wrap {
+    background-color: #f5e0bc;
+    max-width: 55em;
+    margin: 0 auto;
+    padding: 2em 0;
+    border-radius: 10px;
+  }
+
   .critic {
-    margin: 1.5em;
     width: inherit;
   }
 
@@ -510,8 +544,14 @@ footer h3 {
     border-top: 1px solid #e12828;
   }
 
-  .quote {
-    margin: 25% 0;
+  .quote img {
+    display: block;
+  }
+
+  .critic-a,
+  .critic-b,
+  .critic-c {
+    position: relative;
   }
 
   .critic-a .critic-img,
@@ -523,6 +563,9 @@ footer h3 {
 
   .critic-a .quote,
   .critic-c .quote {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     float: left;
     width: 50%;
     padding: 1em;
@@ -535,9 +578,29 @@ footer h3 {
   }
 
   .critic-b .quote {
+    position: absolute;
+    bottom: 0;
     float: right;
     width: 50%;
     padding: 1em;
+  }
+
+}
+
+@media only screen and (min-width: 75em) {
+
+  .contact {
+    float: left;
+    width: 50%
+  }
+
+  .contact .icon {
+    display: block;
+  }
+
+  .shop-hours {
+    float: left;
+    width: 50%;
   }
 
 }
@@ -548,13 +611,28 @@ footer h3 {
     font-size: 130%;
   }
 
+  header {
+    position: relative;
+  }
+
   h1 {
+    float: left;
     font-size: 2.5rem;
   }
 
+  .header-icon {
+    display: block;
+    float: left;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   nav {
-    display: inline-block;
-    padding: 1.7em 0 0;
+    float: right;
+    width: 28em;
+    padding: 2.4em 0 0;
   }
 
   .opening .left {
@@ -564,9 +642,9 @@ footer h3 {
   .opening .opening-text {
     position: absolute;
     left: 25%;
-    top: 50%;
-    transform: translate(-50%, 25%);
+    transform: translate(-50%, 15%);
     max-width: 35em;
+    border-left: 2px solid #e12828;
   }
 
   .opening .opening-img {
@@ -603,6 +681,19 @@ footer h3 {
 
   .icon {
     display: block;
+  }
+
+}
+
+@media only screen and (min-width: 120em) {
+
+  .footer-wrap {
+    max-width: 52em;
+    margin: 0 auto;
+  }
+
+  .info {
+    margin-top: 4em;
   }
 
 }

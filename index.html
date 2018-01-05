@@ -11,6 +11,9 @@
 
   <header>
     <h1>Coco's Chocolatiers</h1>
+    <div class="header-icon">
+      <img class="img-flex" src="images/donut-icon.svg" alt="">
+    </div>
     <nav>
       <input type="checkbox" class="nav-check" id="nav-check">
       <label id="nav-label" for="nav-check">
@@ -32,84 +35,92 @@
 
   <main>
     <section class="opening">
-      <div class="left">
-        <div class="opening-text">
-          <h2>Welcome to Coco's Chocolatiers Confectionary</h2>
-          <p>At Coco's we present you with the sweetest and finest handcrafted chocolates you could ever dream of.</p>
-          <p>If you have a favourite chocolate,<br>Coco's will have it for you.</p>
+      <div class="open-wrap">
+        <div class="left">
+          <div class="opening-text">
+            <h2>Welcome to Coco's Chocolatiers Confectionary</h2>
+            <p>At Coco's we present you with the sweetest and finest handcrafted chocolates you could ever dream of.</p>
+            <p>If you have a favourite chocolate,<br>Coco's will have it for you.</p>
+          </div>
         </div>
-      </div>
-      <div class="opening-img">
-        <img class="img-flex" src="images/chocolate-img-1.jpg" alt="Chocolates">
+        <div class="opening-img">
+          <img class="img-flex" src="images/chocolate-img-1.jpg" alt="Chocolates">
+        </div>
       </div>
     </section>
 
     <section class="preview-products">
       <h2>Our Products</h2>
+      <div class="product-wrap">
+        <a href="#">
+          <figure class="milk-card card">
+            <img class="img-flex" src="images/milk-chocolate.jpg" alt="Milk Chocolate">
+            <figcaption>
+              <h3>Milk Chocolates</h3>
+            </figcaption>
+          </figure>
+        </a>
 
-      <a href="#">
-        <figure class="milk-card card">
-          <img class="img-flex" src="images/milk-chocolate.jpg" alt="Milk Chocolate">
-          <figcaption>
-            <h3>Milk Chocolates</h3>
-          </figcaption>
-        </figure>
-      </a>
+        <a href="#">
+          <figure class="dark-card card">
+            <img class="img-flex" src="images/dark-chocolate.jpg" alt="Dark Chocolate">
+            <figcaption>
+              <h3>Dark Chocolates</h3>
+            </figcaption>
+          </figure>
+        </a>
 
-      <a href="#">
-        <figure class="dark-card card">
-          <img class="img-flex" src="images/dark-chocolate.jpg" alt="Dark Chocolate">
-          <figcaption>
-            <h3>Dark Chocolates</h3>
-          </figcaption>
-        </figure>
-      </a>
-
-      <a href="#">
-        <figure class="white-card card">
-          <img class="img-flex" src="images/white-chocolate.jpg" alt="White Chocolate">
-          <figcaption>
-            <h3>White Chocolates</h3>
-          </figcaption>
-        </figure>
-      </a>
+        <a href="#">
+          <figure class="white-card card">
+            <img class="img-flex" src="images/white-chocolate.jpg" alt="White Chocolate">
+            <figcaption>
+              <h3>White Chocolates</h3>
+            </figcaption>
+          </figure>
+        </a>
+      </div>
     </section>
 
     <section class="critic-review">
 
       <h2>Critics Review</h2>
 
-      <div class="critic critic-a clearfix">
-        <div class="critic-img">
-          <img class="img-flex" src="images/critic-1.jpg" alt="critic 1">
+      <div class="critic-wrap clearfix">
+        <div class="critic critic-a clearfix">
+          <div class="critic-img">
+            <img class="img-flex" src="images/critic-1.jpg" alt="critic 1">
+          </div>
+          <div class="quote">
+            <img src="images/muffin-1.svg" alt="muffin 1">
+            <blockquote class="critic-quote">
+              <p>Simply the best chocolate I have ever had. Melts in your mouth and keeps you wanting for more.</p>
+              <footer>- <cite>John Doe</cite></footer>
+            </blockquote>
+          </div>
         </div>
-        <div class="quote">
-          <blockquote class="critic-quote">
-            <p>Simply the best chocolate I have ever had. Melts in your mouth and keeps you wanting for more.</p>
-            <footer>- <cite>John Doe</cite></footer>
-          </blockquote>
+        <div class="critic critic-b clearfix">
+          <div class="critic-img">
+            <img class="img-flex" src="images/critic-2.jpg" alt="critic 2">
+          </div>
+          <div class="quote">
+            <img src="images/muffin-2.svg" alt="muffin 2">
+            <blockquote class="critic-quote">
+              <p>Absolutely delicious. A perfect treat for you or your loved ones.</p>
+              <footer>- <cite>Jane Doe</cite></footer>
+            </blockquote>
+          </div>
         </div>
-      </div>
-      <div class="critic critic-b clearfix">
-        <div class="critic-img">
-          <img class="img-flex" src="images/critic-2.jpg" alt="critic 2">
-        </div>
-        <div class="quote">
-          <blockquote class="critic-quote">
-            <p>Absolutely delicious. A perfect treat for you or your loved ones.</p>
-            <footer>- <cite>Jane Doe</cite></footer>
-          </blockquote>
-        </div>
-      </div>
-      <div class="critic critic-c clearfix">
-        <div class="critic-img">
-          <img class="img-flex" src="images/critic-3.jpg" alt="critic 3">
-        </div>
-        <div class="quote">
-          <blockquote class="critic-quote">
-            <p>Top quality chocolates at affordable prices. Helps that they can deliver on short notice as well.</p>
-            <footer>- <cite>Johnny Appleseed</cite></footer>
-          </blockquote>
+        <div class="critic critic-c clearfix">
+          <div class="critic-img">
+            <img class="img-flex" src="images/critic-3.jpg" alt="critic 3">
+          </div>
+          <div class="quote">
+            <img src="images/muffin-3.svg" alt="muffin 3">
+            <blockquote class="critic-quote">
+              <p>Top quality chocolates at affordable prices. Helps that they can deliver on short notice as well.</p>
+              <footer>- <cite>Johnny Appleseed</cite></footer>
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>
@@ -117,76 +128,78 @@
   </main>
 
   <footer class="page-footer">
-    <div class="contact">
-      <h3>Contact:</h3>
-      <div class="info">
-        <div class="info-contact">
-          <span><strong>888-888-8888</strong></span>
-          <br><a class="email" href="mailto:askus@cocochocolatiers.com">Askus@cocochoclatiers.com</a>
-        </div>
-        <div class="info-address">
-          <p>
-            111 Main Street
-            <br>Ottawa, <strong>ON</strong> K4J 1S4
-          </p>
+    <div class="footer-wrap clearfix">
+      <div class="contact">
+        <h3>Contact:</h3>
+        <div class="info">
+          <div class="info-contact">
+            <span><strong>888-888-8888</strong></span>
+            <br><a class="email" href="mailto:askus@cocochocolatiers.com">Askus@cocochoclatiers.com</a>
+          </div>
+          <div class="info-address">
+            <p>
+              111 Main Street
+              <br>Ottawa, <strong>ON</strong> K4J 1S4
+            </p>
+          </div>
         </div>
         <img class="img-flex icon" src="images/chocolate-icon.svg" alt="chocolate icon">
       </div>
-    </div>
 
-    <div class="shop-hours">
-      <h3>Shop Hours:</h3>
-      <ol class="hours">
-        <li>
-          <p>
-            <strong>Monday</strong>
-            <br><time datetime="09:00">9:00am</time> - <time datetime="20:00">8:00pm</time>
-          </p>
-        </li>
+      <div class="shop-hours">
+        <h3>Shop Hours:</h3>
+        <ol class="hours">
+          <li>
+            <p>
+              <strong>Monday</strong>
+              <br><time datetime="09:00">9:00am</time> - <time datetime="20:00">8:00pm</time>
+            </p>
+          </li>
 
-        <li>
-          <p>
-            <strong>Tuesday</strong>
-            <br><time datetime="09:00">9:00am</time> - <time datetime="20:00">8:00pm</time>
-          </p>
-        </li>
+          <li>
+            <p>
+              <strong>Tuesday</strong>
+              <br><time datetime="09:00">9:00am</time> - <time datetime="20:00">8:00pm</time>
+            </p>
+          </li>
 
-        <li>
-          <p>
-            <strong>Wednesday</strong>
-            <br><time datetime="09:00">9:00am</time> - <time datetime="17:00">5:00pm</time>
-          </p>
-        </li>
+          <li>
+            <p>
+              <strong>Wednesday</strong>
+              <br><time datetime="09:00">9:00am</time> - <time datetime="17:00">5:00pm</time>
+            </p>
+          </li>
 
-        <li>
-          <p>
-            <strong>Thursday</strong>
-            <br><time datetime="09:00">9:00am</time> - <time datetime="20:00">8:00pm</time>
-          </p>
-        </li>
+          <li>
+            <p>
+              <strong>Thursday</strong>
+              <br><time datetime="09:00">9:00am</time> - <time datetime="20:00">8:00pm</time>
+            </p>
+          </li>
 
-        <li>
-          <p>
-            <strong>Friday</strong>
-            <br><time datetime="09:00">9:00am</time> - <time datetime="20:00">8:00pm</time>
-          </p>
-        </li>
+          <li>
+            <p>
+              <strong>Friday</strong>
+              <br><time datetime="09:00">9:00am</time> - <time datetime="20:00">8:00pm</time>
+            </p>
+          </li>
 
-        <li>
-          <p>
-            <strong>Saturday</strong>
-            <br><time datetime="10:00">10:00am</time> - <time datetime="18:00">6:00pm</time>
-          </p>
-        </li>
+          <li>
+            <p>
+              <strong>Saturday</strong>
+              <br><time datetime="10:00">10:00am</time> - <time datetime="18:00">6:00pm</time>
+            </p>
+          </li>
 
-        <li>
-          <p>
-            <strong>Sunday</strong>
-            <br><time datetime="10:00">10:00am</time> - <time datetime="18:00">6:00pm</time>
-          </p>
-        </li>
+          <li>
+            <p>
+              <strong>Sunday</strong>
+              <br><time datetime="10:00">10:00am</time> - <time datetime="18:00">6:00pm</time>
+            </p>
+          </li>
 
-      </ol>
+        </ol>
+      </div>
     </div>
     <p class="copyright">© 2017 Coco's Chocolatiers</p>
   </footer>
