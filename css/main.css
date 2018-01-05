@@ -242,8 +242,10 @@ footer h3 {
 .critic-review h2 {
   font-family: Muli, sans-serif;
   font-size: 1.3rem;
+  padding: .5em 0;
   margin: 1em auto;
-  width: 6.9em;
+  text-align: center;
+  width: 7.1em;
   color: #e12828;
   border-bottom: 1px solid #e12828;
 }
