@@ -695,6 +695,11 @@ footer h3 {
 
 @media only screen and (min-width: 120em) {
 
+  .banner .banner-caption {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .footer-wrap {
     max-width: 52em;
     margin: 0 auto;
